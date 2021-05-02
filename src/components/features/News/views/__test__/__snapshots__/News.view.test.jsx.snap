@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<News Render News view 1`] = `
+<NewsView
+  className="sc-AxhCb cSudCs"
+  news={
+    Object {
+      "hideComment": [Function],
+      "newsList": Array [
+        Object {
+          "author": "test",
+          "created_at": 2020-05-26T06:02:13.382Z,
+          "hide": false,
+          "index": 1,
+          "linkDomain": "google.com",
+          "num_comments": 10,
+          "points": 10,
+          "title": "test",
+          "upVotes": 0,
+          "url": "url",
+        },
+        Object {
+          "author": "test",
+          "created_at": 2020-05-26T06:02:13.382Z,
+          "hide": false,
+          "index": 1,
+          "linkDomain": "google.com",
+          "num_comments": 10,
+          "points": 10,
+          "title": "test",
+          "upVotes": 0,
+          "url": "url",
+        },
+      ],
+      "pageInfo": Object {
+        "apiPageNumber": 0,
+        "nextPage": 2,
+        "pageNumber": 1,
+      },
+      "upVotes": [Function],
+    }
+  }
+/>
+`;

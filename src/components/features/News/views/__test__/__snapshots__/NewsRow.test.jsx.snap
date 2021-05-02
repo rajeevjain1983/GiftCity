@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewsRow Render NewsRow view 1`] = `
+<NewsRow
+  className="sc-AxjAm ilgvDr"
+  data={
+    Object {
+      "author": "test",
+      "created_at": 2020-05-26T06:02:13.382Z,
+      "hide": false,
+      "index": 1,
+      "linkDomain": "google.com",
+      "num_comments": 10,
+      "points": 10,
+      "title": "test",
+      "upVotes": 0,
+      "url": "url",
+    }
+  }
+  hideButtonHandler={[Function]}
+  upVotesButtonHandler={[Function]}
+/>
+`;
