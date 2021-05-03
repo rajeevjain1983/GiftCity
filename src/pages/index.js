@@ -1,1 +1,1 @@
-export { default } from "../components/features/News";
+export { default } from "../components/features/content/Home";
