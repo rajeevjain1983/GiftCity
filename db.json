@@ -1,14 +1,116 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "main-navigation": [
+    {
+      "category": {
+        "name": "Home_Living_Gifts",
+        "displayName": "Home & Living Gifts",
+        "subCategories": [
+          {
+            "name": "Wall_Hanging",
+            "displayName": "Wall Hanging"
+          },
+          {
+            "name": "Well_Clock",
+            "displayName": "Well Clock"
+          },
+          {
+            "name": "Show_Pieces",
+            "displayName": "Show_Pieces"
+          },
+          {
+            "name": "Paintings",
+            "displayName": "Paintings"
+          },
+          {
+            "name": "Religious_Spiritual_Idols",
+            "displayName": "Religious and Spiritual Idols"
+          }
+        ]
+      }
+    },
+    {
+      "category": {
+        "name": "Toys_And_Games",
+        "displayName": "Toys And Games",
+        "subCategories": [
+          {
+            "name": "Soft_Toys",
+            "displayName": "Soft Toys"
+          },
+          {
+            "name": "Indoor_Games",
+            "displayName": "Indoor Games"
+          },
+          {
+            "name": "Dolls_Actions",
+            "displayName": "Dolls Actions"
+          }
+        ]
+      }
+    },
+    {
+      "category": {
+        "name": "Personalized Gifts",
+        "displayName": "Personalized Gifts",
+        "subCategories": [
+          {
+            "name": "Mugs",
+            "displayName": "Mugs"
+          },
+          {
+            "name": "TShirts",
+            "displayName": "TShirts"
+          },
+          {
+            "name": "Pillow",
+            "displayName": "Pillow"
+          }
+          ,{
+            "name": "Bad_Sheet",
+            "displayName": "Bad Sheet"
+          }
+        ]
+      }
+    },
+    {
+      "category": {
+        "name": "Jewellery",
+        "displayName": "Jewellery",
+        "subCategories": [
+          {
+            "name": "Earing",
+            "displayName": "Earing"
+          },
+          {
+            "name": "Rings",
+            "displayName": "Rings"
+          },
+          {
+            "name": "Pendants",
+            "displayName": "Pendants"
+          }
+        ]
+      }
+    },
+    {
+      "category": {
+        "name": "Wrought_Iron",
+        "displayName": "Wrought Iron",
+        "subCategories": [
+          {
+            "name": "Wall_Hanging",
+            "displayName": "Wall Hanging"
+          },
+          {
+            "name": "Well_Clock",
+            "displayName": "Well Clock"
+          },
+          {
+            "name": "Table_decor",
+            "displayName": "Table decor"
+          }
+        ]
+      }
+    }
+  ]
 }
