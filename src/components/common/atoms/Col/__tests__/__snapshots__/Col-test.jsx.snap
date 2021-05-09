@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Col component renders correctly 1`] = `
+<div
+  className="sample-column"
+  colSize={
+    Object {
+      "large": 12,
+      "medium": 8,
+      "small": 6,
+    }
+  }
+  customNthBreak={0}
+  hideCol={
+    Object {
+      "large": false,
+      "medium": false,
+      "small": true,
+    }
+  }
+  ignoreNthRule={false}
+  style={Object {}}
+>
+  Random column
+</div>
+`;

@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropDown Test should render correctly 1`] = `
+<View
+  style={null}
+>
+  <Styled(Text)
+    isFocused={true}
+  >
+    foo
+  </Styled(Text)>
+  <Styled(Component)
+    arrowImageStyle={null}
+    bounces={true}
+    customDropDownHeight=""
+    data={
+      Array [
+        Object {
+          "label": "foo",
+          "value": "foo",
+        },
+      ]
+    }
+    disabled={false}
+    dropDownItemFontWeight="semibold"
+    dropDownStyle={null}
+    expanded={false}
+    heading="foo"
+    highlightStyle=""
+    isAnimateList={true}
+    itemStyle={
+      Object {
+        "color": "foo",
+      }
+    }
+    onPress={[Function]}
+    onPressOut={[Function]}
+    onValueChange={[MockFunction]}
+    openDropdownOnLoad={false}
+    pointerEvents="auto"
+    selectedItemFontWeight="semibold"
+    selectedValue="foo"
+    variation="primary"
+  >
+    <Styled(View)>
+      <Styled(BodyCopy)
+        accessibilityText=""
+        color="gray.800"
+        dataLocator=""
+        fontFamily="secondary"
+        fontSize="fs13"
+        fontWeight="semibold"
+        margin={null}
+        numberOfLines={null}
+        text="foo"
+        textAlign="center"
+        textDecoration={null}
+      />
+    </Styled(View)>
+    <Image
+      accessibilityElementsHidden={true}
+      alt=""
+      importantForAccessibility="no-hide-descendants"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/carrot-small-down.png",
+        }
+      }
+      style={null}
+    />
+  </Styled(Component)>
+  <Component
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <Styled(Component)
+      accessibilityLabel="Tap to close it"
+      accessibilityRole="none"
+      accessible={true}
+      activeOpacity={1}
+      height={1334}
+      onPress={[Function]}
+      paddingTop={0}
+    />
+    <Styled(View)
+      left={0}
+      top={0}
+      width={0}
+    >
+      <Styled(View)
+        height={0}
+        width={0}
+      />
+    </Styled(View)>
+  </Component>
+</View>
+`;
+
+exports[`DropDown Test should render with dropdown open state 1`] = `
+<View
+  style={null}
+>
+  <Styled(Text)
+    isFocused={true}
+  >
+    foo
+  </Styled(Text)>
+  <Styled(Component)
+    arrowImageStyle={null}
+    bounces={true}
+    customDropDownHeight=""
+    data={
+      Array [
+        Object {
+          "label": "foo",
+          "value": "foo",
+        },
+      ]
+    }
+    disabled={false}
+    dropDownItemFontWeight="semibold"
+    dropDownStyle={null}
+    expanded={true}
+    heading="foo"
+    highlightStyle=""
+    isAnimateList={true}
+    itemStyle={
+      Object {
+        "color": "foo",
+      }
+    }
+    onPress={[Function]}
+    onPressOut={[Function]}
+    onValueChange={[MockFunction]}
+    openDropdownOnLoad={false}
+    pointerEvents="auto"
+    selectedItemFontWeight="semibold"
+    selectedValue="foo"
+    variation="primary"
+  >
+    <Styled(View)>
+      <Styled(BodyCopy)
+        accessibilityText=""
+        color="gray.800"
+        dataLocator=""
+        fontFamily="secondary"
+        fontSize="fs13"
+        fontWeight="semibold"
+        margin={null}
+        numberOfLines={null}
+        text="foo"
+        textAlign="center"
+        textDecoration={null}
+      />
+    </Styled(View)>
+    <Image
+      accessibilityElementsHidden={true}
+      alt=""
+      importantForAccessibility="no-hide-descendants"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/carrot-small-up.png",
+        }
+      }
+      style={null}
+    />
+  </Styled(Component)>
+  <Component
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={true}
+  >
+    <Styled(Component)
+      accessibilityLabel="Tap to close it"
+      accessibilityRole="none"
+      accessible={true}
+      activeOpacity={1}
+      height={1334}
+      onPress={[Function]}
+      paddingTop={0}
+    />
+    <Styled(View)
+      left={0}
+      top={0}
+      width={0}
+    >
+      <Styled(View)
+        height={0}
+        width={0}
+      >
+        <Styled(FlatList)
+          ItemSeparatorComponent={[Function]}
+          accessibilityRole="combobox"
+          bounces={true}
+          data={
+            Array [
+              Object {
+                "label": "foo",
+                "value": "foo",
+              },
+            ]
+          }
+          isFocused={true}
+          keyExtractor={[Function]}
+          renderItem={[Function]}
+          style={
+            Object {
+              "height": 0,
+            }
+          }
+        />
+      </Styled(View)>
+    </Styled(View)>
+  </Component>
+</View>
+`;

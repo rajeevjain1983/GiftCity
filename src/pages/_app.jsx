@@ -11,7 +11,7 @@ import configureStore from "../reduxStore/store";
 // import axios from "../service/axios_order";
 // import { setBurgerIngredients } from "../components/features/Burger/container/Burger.actions";
 
-class burger_app extends App {
+class GiftCityApp extends App {
   constructor(props) {
     super(props);
     this.state = { theme: LightTheme };
@@ -39,7 +39,7 @@ class burger_app extends App {
   }
 
   render() {
-    console.log("Render burger_app!!", this.props);
+    console.log("Gift City!!", this.props);
     const { Component, pageProps, store } = this.props;
     return (
       <ThemeProvider theme={this.state.theme}>
@@ -55,4 +55,4 @@ class burger_app extends App {
   }
 }
 
-export default withRedux(configureStore)(withReduxSaga(burger_app));
+export default withRedux(configureStore)(withReduxSaga(GiftCityApp));

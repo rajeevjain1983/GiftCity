@@ -1,14 +1,12 @@
 import { combineReducers } from "redux";
 import { reducer as formReducer } from "redux-form";
-// import {
-//   OrderHistoryConstants,
-//   BurgerConstants,
-// } from "../../components/common/constants";
+import {
+  HOME_REDUCER_KEY,
+} from "../../constants/reducer.constants";
 // import OrderHistoryReducer from "../../components/features/OrderHistory/container/OrderHistory.reducer";
-// import BurgerReducer from "../../components/features/Burger/container/Burger.Reducer";
+import HomeReducer from "../../components/features/content/Home/container/Home.reducer";
 
 export default combineReducers({
-  // [OrderHistoryConstants.OrderHistoryReducerKey]: OrderHistoryReducer,
-  // [BurgerConstants.BurgerReducerKey]: BurgerReducer,
+  [HOME_REDUCER_KEY]: HomeReducer,
   form: formReducer,
 });

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomButton should render correctly 1`] = `
+<Styled(Component)
+  accessibilityRole="button"
+  customIconStyle={Object {}}
+  disabled={false}
+  iconColor="gray.800"
+  iconName="chevron-down"
+  iconSize="fs12"
+  navigation={Object {}}
+  onPress={[Function]}
+  selectedIcon="chevron-up"
+  showIcon={false}
+  style={Object {}}
+  theme={Object {}}
+  url=""
+>
+  <Styled(Styled(Text))
+    active={false}
+    buttonVariation="fixed-width"
+    color=""
+    customBorderStyle=""
+    disableButton={false}
+    fill=""
+    fontFamily=""
+    fontSize=""
+    fontWeight=""
+    fullWidth=""
+    paddings="12px 32px 12px 32px"
+    selected={false}
+    style={null}
+    useCustomFontStyle={false}
+    withNoLineHeight={false}
+  />
+</Styled(Component)>
+`;

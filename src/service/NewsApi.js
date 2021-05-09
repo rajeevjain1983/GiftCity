@@ -1,4 +1,4 @@
-import axiosNews from "./axios_news";
+import axiosNews from "./axiosGC";
 import { formatNewsData } from "../components/common/Util";
 
 export const getNewsDataFromApi = async (apiPageNumber) => {

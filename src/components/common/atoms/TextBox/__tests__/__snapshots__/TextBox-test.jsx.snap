@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textbox component renders correctly 1`] = `
+<label
+  className="asdfasdf input-fields-wrapper textbox_validation_success"
+  htmlFor="abcd"
+>
+  <input
+    aria-describedby="textbox__error__undefined"
+    aria-label=""
+    aria-required={false}
+    className="TextBox__input"
+    data-locator=""
+    id="abcd"
+    onChangeHandler={[Function]}
+    placeholder=""
+    type="text"
+    value="hello sonar"
+  />
+  <Styled(BodyCopy)
+    className="TextBox__label"
+    color="text.primary"
+    component="p"
+    customStyle={Object {}}
+    fontFamily="secondary"
+    fontSize="fs12"
+    fontWeight="regular"
+    letterSpacing="normal"
+    lineHeight="normal"
+    link={null}
+    textAlign="left"
+  />
+  <div
+    className="TextBox__error"
+  >
+    <div
+      aria-disabled="true"
+      className=""
+    />
+    <Styled(BodyCopy)
+      aria-live="assertive"
+      className={null}
+      color="error"
+      component="div"
+      customStyle={Object {}}
+      data-locator=""
+      fontFamily="secondary"
+      fontSize="fs12"
+      fontWeight="extrabold"
+      id="textbox__error__undefined"
+      letterSpacing="normal"
+      lineHeight="normal"
+      link={null}
+      role="alert"
+      textAlign="left"
+    />
+  </div>
+  <div
+    className="success__checkmark"
+  />
+</label>
+`;
+
+exports[`Textbox component renders errored state correctly 1`] = `
+<label
+  className="asdfasdf input-fields-wrapper textbox_validation_success"
+  htmlFor="abcd"
+>
+  <input
+    aria-describedby="textbox__error__undefined"
+    aria-label=""
+    aria-required={false}
+    className="TextBox__input"
+    data-locator=""
+    id="abcd"
+    onChangeHandler={[Function]}
+    placeholder=""
+    type="text"
+    value="hello sonar"
+  />
+  <Styled(BodyCopy)
+    className="TextBox__label"
+    color="text.primary"
+    component="p"
+    customStyle={Object {}}
+    fontFamily="secondary"
+    fontSize="fs12"
+    fontWeight="regular"
+    letterSpacing="normal"
+    lineHeight="normal"
+    link={null}
+    textAlign="left"
+  />
+  <div
+    className="TextBox__error"
+  >
+    <div
+      aria-disabled="true"
+      className="warning-icon"
+    />
+    <Styled(BodyCopy)
+      aria-live="assertive"
+      className={null}
+      color="error"
+      component="div"
+      customStyle={Object {}}
+      data-locator=""
+      fontFamily="secondary"
+      fontSize="fs12"
+      fontWeight="extrabold"
+      id="textbox__error__undefined"
+      letterSpacing="normal"
+      lineHeight="normal"
+      link={null}
+      role="alert"
+      textAlign="left"
+    >
+      some error occurred from meta
+    </Styled(BodyCopy)>
+  </div>
+  <div
+    className="success__checkmark"
+  />
+</label>
+`;
+
+exports[`Textbox component renders with explicit errors state correctly 1`] = `
+<label
+  className="asdfasdf input-fields-wrapper textbox_validation_success"
+  htmlFor="abcd"
+>
+  <input
+    aria-describedby="textbox__error__undefined"
+    aria-label=""
+    aria-required={false}
+    className="TextBox__input"
+    data-locator=""
+    id="abcd"
+    onChangeHandler={[Function]}
+    placeholder=""
+    submitErrors="some error occurred from submit errors"
+    type="text"
+    value="hello sonar"
+  />
+  <Styled(BodyCopy)
+    className="TextBox__label"
+    color="text.primary"
+    component="p"
+    customStyle={Object {}}
+    fontFamily="secondary"
+    fontSize="fs12"
+    fontWeight="regular"
+    letterSpacing="normal"
+    lineHeight="normal"
+    link={null}
+    textAlign="left"
+  />
+  <div
+    className="TextBox__error"
+  >
+    <div
+      aria-disabled="true"
+      className="warning-icon"
+    />
+    <Styled(BodyCopy)
+      aria-live="assertive"
+      className={null}
+      color="error"
+      component="div"
+      customStyle={Object {}}
+      data-locator=""
+      fontFamily="secondary"
+      fontSize="fs12"
+      fontWeight="extrabold"
+      id="textbox__error__undefined"
+      letterSpacing="normal"
+      lineHeight="normal"
+      link={null}
+      role="alert"
+      textAlign="left"
+    >
+      some error occurred from meta
+    </Styled(BodyCopy)>
+  </div>
+  <div
+    className="success__checkmark"
+  />
+</label>
+`;
+
+exports[`Textbox component renders with submit errors state correctly 1`] = `
+<label
+  className="asdfasdf input-fields-wrapper textbox_validation_success"
+  htmlFor="abcd"
+>
+  <input
+    aria-describedby="textbox__error__undefined"
+    aria-label=""
+    aria-required={false}
+    className="TextBox__input"
+    data-locator=""
+    id="abcd"
+    onChangeHandler={[Function]}
+    placeholder=""
+    submitErrors="some error occurred from submit errors"
+    type="text"
+    value="hello sonar"
+  />
+  <Styled(BodyCopy)
+    className="TextBox__label"
+    color="text.primary"
+    component="p"
+    customStyle={Object {}}
+    fontFamily="secondary"
+    fontSize="fs12"
+    fontWeight="regular"
+    letterSpacing="normal"
+    lineHeight="normal"
+    link={null}
+    textAlign="left"
+  />
+  <div
+    className="TextBox__error"
+  >
+    <div
+      aria-disabled="true"
+      className="warning-icon"
+    />
+    <Styled(BodyCopy)
+      aria-live="assertive"
+      className={null}
+      color="error"
+      component="div"
+      customStyle={Object {}}
+      data-locator=""
+      fontFamily="secondary"
+      fontSize="fs12"
+      fontWeight="extrabold"
+      id="textbox__error__undefined"
+      letterSpacing="normal"
+      lineHeight="normal"
+      link={null}
+      role="alert"
+      textAlign="left"
+    >
+      some error occurred from meta
+    </Styled(BodyCopy)>
+  </div>
+  <div
+    className="success__checkmark"
+  />
+</label>
+`;

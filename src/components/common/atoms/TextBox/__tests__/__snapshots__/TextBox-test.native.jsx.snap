@@ -1,0 +1,299 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textbox component render enableSuccessCheck on validation fail 1`] = `
+<View>
+  <View>
+    <View>
+      <Styled(Text)
+        isFocused="foo"
+      >
+        input
+      </Styled(Text)>
+      <Styled(Component)
+        accessibilityLabel="input"
+        ariaLabel="input"
+        autoCapitalize="sentences"
+        className="TextBox__input"
+        data-locator="input-field"
+        dataLocator="input-field"
+        enableSuccessCheck={false}
+        error="food"
+        id="input"
+        isCVVFieldError={false}
+        keyboardType="default"
+        label="input"
+        meta={
+          Object {
+            "error": "food",
+            "touched": "foo",
+          }
+        }
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onEndEditing={[Function]}
+        onFocus={[Function]}
+        onPasswordFocus={false}
+        returnKeyType="next"
+        secureTextEntry={false}
+        showSuccessCheck={false}
+        successText=""
+        type="text"
+        value="foo"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Textbox component render enableSuccessCheck on validation true 1`] = `
+<View>
+  <View>
+    <View>
+      <Styled(Text)
+        isFocused="foo"
+      >
+        input
+      </Styled(Text)>
+      <Styled(Component)
+        accessibilityLabel="input"
+        ariaLabel="input"
+        autoCapitalize="sentences"
+        className="TextBox__input"
+        data-locator="input-field"
+        dataLocator="input-field"
+        enableSuccessCheck={true}
+        error=""
+        id="input"
+        isCVVFieldError={false}
+        keyboardType="default"
+        label="input"
+        meta={
+          Object {
+            "error": "",
+            "touched": "",
+          }
+        }
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onEndEditing={[Function]}
+        onFocus={[Function]}
+        onPasswordFocus={false}
+        returnKeyType="next"
+        secureTextEntry={false}
+        showSuccessCheck={false}
+        successText=""
+        type="text"
+        value="foo"
+      />
+      <Styled(View)>
+        <Styled(ImageComp)
+          alt=""
+          cacheType="immutable"
+          height="12px"
+          host=""
+          isFastImage={false}
+          onError={[Function]}
+          onLoadStart={[Function]}
+          onProgress={[Function]}
+          priority="normal"
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/success-icon.png",
+            }
+          }
+          url=""
+          width="15px"
+        />
+      </Styled(View)>
+    </View>
+    <Styled(View)
+      marginBottom={true}
+    />
+  </View>
+</View>
+`;
+
+exports[`Textbox component renders correctly 1`] = `
+<View>
+  <View>
+    <View>
+      <Styled(Text)
+        isFocused="foo"
+      >
+        input
+      </Styled(Text)>
+      <Styled(Component)
+        accessibilityLabel="input"
+        ariaLabel="input"
+        autoCapitalize="sentences"
+        className="TextBox__input"
+        data-locator="input-field"
+        dataLocator="input-field"
+        enableSuccessCheck={false}
+        error=""
+        id="input"
+        isCVVFieldError={false}
+        keyboardType="default"
+        label="input"
+        meta={
+          Object {
+            "error": "",
+            "touched": "",
+          }
+        }
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onEndEditing={[Function]}
+        onFocus={[Function]}
+        onPasswordFocus={false}
+        returnKeyType="next"
+        secureTextEntry={false}
+        showSuccessCheck={false}
+        successText=""
+        type="text"
+        value="foo"
+      />
+    </View>
+    <Styled(View)
+      marginBottom={true}
+    />
+  </View>
+</View>
+`;
+
+exports[`Textbox component renders correctly explicit error with textbox 1`] = `
+<View>
+  <View>
+    <View>
+      <Styled(Text)
+        isFocused="foo"
+      >
+        input
+      </Styled(Text)>
+      <Styled(Component)
+        accessibilityLabel="input"
+        ariaLabel="input"
+        autoCapitalize="sentences"
+        className="TextBox__input"
+        data-locator="input-field"
+        dataLocator="input-field"
+        enableSuccessCheck={false}
+        error=""
+        id="input"
+        isCVVFieldError={false}
+        keyboardType="default"
+        label="input"
+        meta={
+          Object {
+            "error": "",
+            "touched": "",
+          }
+        }
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onEndEditing={[Function]}
+        onFocus={[Function]}
+        onPasswordFocus={false}
+        returnKeyType="next"
+        secureTextEntry={false}
+        showSuccessCheck={false}
+        successText=""
+        type="text"
+        value="foo"
+      />
+    </View>
+    <Styled(View)
+      marginBottom={true}
+    >
+      <Styled(View)
+        isCVVFieldError={false}
+      >
+        <Styled(View)>
+          <Styled(ImageComp)
+            alt=""
+            cacheType="immutable"
+            height="14px"
+            host=""
+            isFastImage={false}
+            onError={[Function]}
+            onLoadStart={[Function]}
+            onProgress={[Function]}
+            priority="normal"
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/alert-triangle.png",
+              }
+            }
+            url=""
+            width="16px"
+          />
+        </Styled(View)>
+        <Styled(BodyCopy)
+          accessibilityText=""
+          color="error"
+          dataLocator=""
+          fontFamily="secondary"
+          fontSize="fs12"
+          fontWeight="extrabold"
+          margin={null}
+          numberOfLines={null}
+          text="Some Error Occurred"
+          textDecoration={null}
+        />
+      </Styled(View)>
+    </Styled(View)>
+    <Styled(View)
+      marginBottom={true}
+    />
+  </View>
+</View>
+`;
+
+exports[`Textbox component renders correctly hidden textbox 1`] = `
+<View>
+  <View>
+    <Styled(View)>
+      <View>
+        <Styled(Text)
+          isFocused="foo"
+        >
+          input
+        </Styled(Text)>
+        <Styled(Component)
+          accessibilityLabel="input"
+          ariaLabel="input"
+          autoCapitalize="sentences"
+          className="TextBox__input"
+          data-locator="input-field"
+          dataLocator="input-field"
+          enableSuccessCheck={false}
+          error=""
+          id="input"
+          isCVVFieldError={false}
+          keyboardType="default"
+          label="input"
+          meta={
+            Object {
+              "error": "",
+              "touched": "",
+            }
+          }
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onEndEditing={[Function]}
+          onFocus={[Function]}
+          onPasswordFocus={false}
+          returnKeyType="next"
+          secureTextEntry={false}
+          showSuccessCheck={false}
+          successText=""
+          type="hidden"
+          value="foo"
+        />
+      </View>
+    </Styled(View)>
+  </View>
+</View>
+`;

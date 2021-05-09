@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Anchor Native should render correctly 1`] = `
+<Styled(Component)
+  accessibilityLabel="click Me"
+  accessibilityRole="button"
+  accessible={true}
+  hitSlop={Object {}}
+  justifyContent=""
+  onPress={[Function]}
+  style={Object {}}
+>
+  <Styled(Text)
+    anchorVariation=""
+    colorName={null}
+    internal={true}
+    margins={null}
+    name="Anchor"
+    navigation={
+      Object {
+        "dispatch": [MockFunction],
+        "navigate": [MockFunction],
+      }
+    }
+    url="/p/Rainbow--The-Birthday-Girl--Graphic-Tee"
+  >
+    click Me
+  </Styled(Text)>
+</Styled(Component)>
+`;
