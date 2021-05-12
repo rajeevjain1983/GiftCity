@@ -10,7 +10,7 @@ import Col from './Col';
 // import RichText from './RichText';
 // import TextBox from './TextBox';
 // import Heading from './Heading';
-// import BodyCopy from './BodyCopy';
+import BodyCopy from './BodyCopy';
 // import SelectBox from './Select';
 // import LabeledRadioButton from './LabeledRadioButton';
 // import TextItems from './TextItems';
@@ -39,7 +39,7 @@ export {
 //   RichText,
 //   TextBox,
 //   Heading,
-//   BodyCopy,
+  BodyCopy,
 //   SelectBox,
 //   LabeledRadioButton,
 //   TextItems,

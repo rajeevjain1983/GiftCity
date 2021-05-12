@@ -14,7 +14,7 @@ import configureStore from "../reduxStore/store";
 class GiftCityApp extends App {
   constructor(props) {
     super(props);
-    this.state = { theme: LightTheme };
+    this.state = { theme: DarKTheme };
     this.toggleTheme = this.toggleTheme.bind(this);
   }
 

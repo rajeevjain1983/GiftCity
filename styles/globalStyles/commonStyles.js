@@ -2,7 +2,7 @@ import { css } from "styled-components";
 
 export default css`
   body {
-    font-family: "Nunito,Arial, Helvetica, sans-serif";
+    font-family: "sans-serif";
     overflow-x: hidden;
     /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
@@ -10,7 +10,8 @@ export default css`
     width: 100%;
     margin: 0 auto;
     position: relative;
-    background-color:${(props) => props.theme.bodyBackgroundColor};
+    font-size:13pt;
+    background-color:${(props) => props.theme.colors.common.white};
     color:${(props) => props.theme.fontColor};
    
   }

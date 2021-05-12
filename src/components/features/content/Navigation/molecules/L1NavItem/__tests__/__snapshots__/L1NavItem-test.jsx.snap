@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawer component renders correctly 1`] = `
+<Fragment>
+  <ContextProvider
+    value={
+      Object {
+        "hideL2Nav": [Function],
+      }
+    }
+  >
+    <Styled(BodyCopy)
+      className="undefined  nav-bar-l1-item"
+      color="text.primary"
+      component="li"
+      customStyle={Object {}}
+      data-locator=""
+      fontFamily="secondary"
+      fontSize={
+        Array [
+          "fs13",
+          "fs13",
+          "fs15",
+        ]
+      }
+      fontWeight="semibold"
+      id=""
+      letterSpacing="normal"
+      lineHeight="lh115"
+      link={null}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="menuitem"
+      textAlign="left"
+    >
+      <Styled(Anchor)
+        aria-expanded={false}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        <div
+          className="nav-bar-l1-content"
+        >
+          <span
+            className="nav-bar-item-label "
+          />
+          <span
+            className="nav-bar-item-content "
+            data-locator="promo_badge_undefined"
+          >
+            <Styled(PromoBadge)
+              data={
+                Array [
+                  Object {
+                    "style": "style1",
+                    "text": "30% off shoes",
+                  },
+                ]
+              }
+            />
+          </span>
+          <span
+            className="icon-arrow"
+          />
+        </div>
+      </Styled(Anchor)>
+    </Styled(BodyCopy)>
+  </ContextProvider>
+</Fragment>
+`;

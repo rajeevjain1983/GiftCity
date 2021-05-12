@@ -2,12 +2,13 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import NavigationView from "./views";
-import { getNavigationState } from "../Home/container/Home.selectors";
-import { getNavigation } from "../Home/container/Home.actions";
+import { getNavigationState } from "./Navigation.selectors";
+import { getNavigation } from "./Navigation.actions";
 
 export const NavigationContainer = (props) => {
   const { getNavigationData } = props;
   useEffect(() => {
+    console.log(" useEffect");
     getNavigationData();
   }, [getNavigationData]);
 
