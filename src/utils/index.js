@@ -1,9 +1,5 @@
 
-import {
-    disableBodyScroll as disableBodyScrollLib,
-    enableBodyScroll as enableBodyScrollLib,
-    clearAllBodyScrollLocks,
-  } from 'body-scroll-lock';
+
 import { breakpoints} from '../../styles/themes/mediaQuery';
 
 export const getViewportInfo = () => {
@@ -88,45 +84,12 @@ export const isiOSWeb = () => {
     return (isClient() && isiOSWeb()) || (isClient() && isAndroidWeb());
   };
   
-  /**
-   * This function will remove all the body scroll locks.
-   */
-  export const removeBodyScrollLocks = () => {
-    if (isiOSWeb() && isClient()) {
-      clearAllBodyScrollLocks();
-    }
-    if (isAndroidWeb() && isClient()) {
-      const [body] = document.getElementsByTagName('body');
-      body.classList.remove('disableBodyScroll');
-    }
-  };
-  /**
-   * Enable Body Scroll, Moving it to common utils and putting a check of Mobile app at one place instead of containers.
-   */
-  export const enableBodyScroll = targetElem => {
-    if (isClient()) {
-      if (isiOSWeb() && targetElem) {
-        enableBodyScrollLib(targetElem);
-        return;
-      }
-      const [body] = document.getElementsByTagName('body');
-      body.classList.remove('disableBodyScroll');
-    }
-  };
+
   
-  /**
-   * Disable Body Scroll
-   */
-  export const disableBodyScroll = targetElem => {
-    if (isClient()) {
-      if (isiOSWeb() && targetElem) {
-        disableBodyScrollLib(targetElem);
-        return;
-      }
-      const [body] = document.getElementsByTagName('body');
-      body.classList.add('disableBodyScroll');
-    }
-  };
+ 
+  
+
+  
 
   export const createUrlSearchParams = (query = {}) => {
     const queryParams = [];
