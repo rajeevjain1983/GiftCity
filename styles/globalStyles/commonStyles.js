@@ -9,7 +9,6 @@ export default css`
     -moz-osx-font-smoothing: grayscale; */
     width: 100%;
     margin: 0 auto;
-    position: relative;
     font-size:13pt;
     background-color:${(props) => props.theme.colors.common.white};
     color:${(props) => props.theme.fontColor};

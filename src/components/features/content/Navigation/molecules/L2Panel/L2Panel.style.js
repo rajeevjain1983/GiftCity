@@ -10,6 +10,7 @@ export default css`
   background:transparent;
   .main-container{
     background:${props => props.theme.primaryColor};
+    opacity:90%;
     padding:0 ${(props) => props.theme.spacing.ELEM_SPACING.LRG} 0 30px;
     padding:20px 20px 50px 20px;
   }

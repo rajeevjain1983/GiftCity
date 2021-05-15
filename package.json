@@ -11,6 +11,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "immutable": "^4.0.0-rc.12",
     "jest": "^26.0.1",
+    "json-server": "^0.16.3",
     "next": "^9.3.0",
     "next-redux-saga": "4.0.0",
     "next-redux-wrapper": "^3.0.0-alpha.2",

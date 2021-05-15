@@ -1,12 +1,16 @@
 import { css } from "styled-components";
 
+
+
 export default css`
   .main-navigation{
+    margin:0 auto;
+    width:70%;
+    position: relative;
     display: flex;
     justify-content: space-between;
     color: ${props=>props.theme.colors.common.white};
-    padding:${props=>props.theme.spacing.ELEM_SPACING.XS};
-    background:${props=>props.theme.primaryColor};
+    padding:${props=>props.theme.spacing.ELEM_SPACING.XS} 0;
     font-size: 12pt;
   }
 

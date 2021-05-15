@@ -1,7 +1,7 @@
 
 import { css } from 'styled-components';
 export default css`
-  margin: 0px 12px;
+  /* margin: 0px 12px; */
   
   
   /* border:1px solid blue; */
