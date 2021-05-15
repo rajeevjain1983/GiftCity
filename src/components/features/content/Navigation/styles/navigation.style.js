@@ -3,9 +3,10 @@ import { css } from "styled-components";
 
 
 export default css`
+
   .main-navigation{
     margin:0 auto;
-    width:70%;
+    width:100%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -25,6 +26,12 @@ export default css`
   .main-navigation li:hover{
     border-bottom:  3px solid ${(props) => props.theme.bottomBorderColor};
     background-color:${(props) => props.theme.menuHover};
+  }
+
+  @media ${props => props.theme.mediaQuery.large} {
+      .main-navigation{
+      width:70%;
+    }
   }
 
   

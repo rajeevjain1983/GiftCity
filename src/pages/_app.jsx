@@ -8,8 +8,6 @@ import { Header, Footer } from "../components/features/content";
 import { LightTheme, DarKTheme } from "../../styles/themes";
 import GlobalStyle from "../../styles/globalStyles";
 import configureStore from "../reduxStore/store";
-// import axios from "../service/axios_order";
-// import { setBurgerIngredients } from "../components/features/Burger/container/Burger.actions";
 
 class GiftCityApp extends App {
   constructor(props) {
@@ -20,14 +18,6 @@ class GiftCityApp extends App {
 
   componentDidMount() {
     console.log("App componentDidMount");
-  }
-
-  static async getInitialProps({ Component, ctx }) {
-    // console.log("getInitialProps", ctx);
-    // const { store } = ctx;
-    // const response = await axios.get("/ingredients.json");
-    // await store.dispatch(setBurgerIngredients(response.data));
-    // return { pageProps: { data: response.data } };
   }
 
   toggleTheme() {
