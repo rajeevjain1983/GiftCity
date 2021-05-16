@@ -1,27 +1,40 @@
 import { css } from "styled-components";
 
 export default css`
-  
-
+ 
 .container{
   display: flex;
-  align-items: center;
-  padding: 0px;
+  padding: 12px 0 0 0;
 }
 .navigation-container{
   background:${props=>props.theme.bodyBackgroundColor};
 }
+
+.brand-logo-container{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  padding-left:12px;
+}
   
-  .headerImage {
-    width: 190px;
-    height: 55px;
-    margin-left: 30px;
+  .brand-logo {
+    padding-left:8px;
+    width: 130px;
+    height: 40px;
   }
   .search-bar{
-    width: 606px;
-    margin-left: 82px;
+    max-width: 500px;
   }
-  .header-item3{
-    width: 450px;
+  .cart{
+    width: 60px;
+    padding-right:8px;
+  }
+  
+
+  @media ${props => props.theme.mediaQuery.large} {
+    .brand-logo {
+    width: 190px;
+    height: 55px;
+  }
   }
 `;

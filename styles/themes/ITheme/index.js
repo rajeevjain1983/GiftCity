@@ -10,7 +10,7 @@ import {
 } from "../colors";
 import spacing from "../spacing";
 import { mediaQuery } from "../mediaQuery";
-
+import gridDimensions from '../gridDimensions';
 export default {
   colors: { red, blue, common, gray, green, orange, pink, yellow },
   name: "ITheme",
@@ -18,4 +18,5 @@ export default {
   mediaQuery,
   bodyBackgroundColor: blue.D100,
   fontColor:gray[1900],
+  gridDimensions,
 };

@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import {mediaQuery} from "../../styles/themes/mediaQuery";
 
 export default css`
   body {
@@ -123,7 +124,7 @@ export default css`
     }
   } */
 
-  /* .hide-on-desktop {
+  .hide-on-desktop {
     @media ${mediaQuery.largeOnly} {
       display: none !important;
     }
@@ -131,7 +132,7 @@ export default css`
       display: none !important;
     }
   }
-
+/* 
   .hide-on-tablet {
     @media ${mediaQuery.mediumOnly} {
       display: none !important;

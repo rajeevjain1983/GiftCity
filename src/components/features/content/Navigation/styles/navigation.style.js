@@ -9,6 +9,7 @@ export default css`
     width:100%;
     position: relative;
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
     color: ${props=>props.theme.colors.common.white};
     font-size: 12pt;
@@ -31,6 +32,8 @@ export default css`
   @media ${props => props.theme.mediaQuery.large} {
       .main-navigation{
       width:90%;
+      display: flex;
+      flex-direction:row;
     }
   }
 
