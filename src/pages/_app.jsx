@@ -5,14 +5,14 @@ import withReduxSaga from "next-redux-saga";
 import { ThemeProvider } from "styled-components";
 import { Provider } from "react-redux";
 import { Header, Footer } from "../components/features/content";
-import { LightTheme, DarKTheme } from "../../styles/themes";
+import { CTheme, ITheme, TTheme } from "../../styles/themes";
 import GlobalStyle from "../../styles/globalStyles";
 import configureStore from "../reduxStore/store";
 
 class GiftCityApp extends App {
   constructor(props) {
     super(props);
-    this.state = { theme: DarKTheme };
+    this.state = { theme: TTheme };
     this.toggleTheme = this.toggleTheme.bind(this);
   }
 
@@ -21,10 +21,12 @@ class GiftCityApp extends App {
   }
 
   toggleTheme() {
-    if (this.state.theme.name === "lightTheme") {
-      this.setState({ theme: DarKTheme });
+    if (this.state.theme.name === "TTheme") {
+      this.setState({ theme: TTheme });
+    } else if (this.state.theme.name === "ITheme") {
+      this.setState({ theme: ITheme });
     } else {
-      this.setState({ theme: LightTheme });
+      this.setState({ theme: CTheme });
     }
   }
 

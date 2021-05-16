@@ -9,8 +9,7 @@ export default css`
   padding: 0px;
 }
 .navigation-container{
-  
-  background:${props=>props.theme.primaryColor};
+  background:${props=>props.theme.bodyBackgroundColor};
 }
   
   .headerImage {

@@ -1,4 +1,5 @@
-import DarKTheme from "./DarkTheme";
-import LightTheme from "./LightTheme";
+import TTheme from "./TTheme";
+import CTheme from "./CTheme";
+import ITheme from "./ITheme";
 
-export { DarKTheme, LightTheme };
+export { CTheme,ITheme,TTheme};

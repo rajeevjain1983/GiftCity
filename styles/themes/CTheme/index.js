@@ -13,13 +13,9 @@ import { mediaQuery } from "../mediaQuery";
 
 export default {
   colors: { red, blue, common, gray, green, orange, pink, yellow },
-  name: "darkTheme",
-  primaryColor: common.primaryColor,
-  secondaryColor: blue["1000"],
-  menuHover:'#F304F5',
-  bottomBorderColor:blue.D100,
+  name: "CTheme",
   spacing,
   mediaQuery,
-  bodyBackgroundColor: common.primaryColor,
-  fontColor: common.white,
+  bodyBackgroundColor: common.cColor,
+  fontColor:gray[1900],
 };

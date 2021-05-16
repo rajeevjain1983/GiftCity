@@ -4,9 +4,9 @@ const common = {
   purple: '#b976cc',
   newpurple: '#C7389C',
   venmoBorder: '#2c2e2f',
-  primaryColor:'#ff00fe',
-  secondaryColor:'#6cac33',
+  tColor:'#ff00fe',
   menuHover:'#F304F5',
+  cColor:'#6cac33'
 };
 
 export default common;
