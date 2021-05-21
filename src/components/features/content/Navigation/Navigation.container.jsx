@@ -8,7 +8,6 @@ import { getNavigation } from "./Navigation.actions";
 export const NavigationContainer = (props) => {
   const { getNavigationData } = props;
   useEffect(() => {
-    console.log(" useEffect");
     getNavigationData();
   }, [getNavigationData]);
 

@@ -3,10 +3,7 @@ import createSagaMiddleware from "redux-saga";
 import globalReducer from "../reducers";
 import { composeWithDevTools } from "redux-devtools-extension";
 import globalSaga from "../saga";
-
-// const sagaMiddleware = createSagaMiddleware();
 const configureStore = (preloadedState) => {
-  console.log("configured saga");
   const sagaMiddleware = createSagaMiddleware();
 
   const middlewares = [sagaMiddleware];
@@ -23,7 +20,6 @@ const configureStore = (preloadedState) => {
 
   store.sagaTask = sagaMiddleware.run(globalSaga);
 
-  console.log("store",store);
 
   return store;
 };

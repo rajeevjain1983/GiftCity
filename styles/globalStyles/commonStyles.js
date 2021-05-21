@@ -4,7 +4,7 @@ import {mediaQuery} from "../../styles/themes/mediaQuery";
 export default css`
   body {
     font-family: "sans-serif";
-    overflow-x: hidden;
+    overflow: auto;
     /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
@@ -82,8 +82,16 @@ export default css`
   .disableBodyScroll {
     overflow: hidden;
   }
-
+  .nav-sprite {
+    background-image: url(/icons/icons-sprite.png);
+    background-repeat: no-repeat;
+    }
   
+    .nav-sprite-2 {
+    background-image: url(/icons/icons-sprite-2.png);
+    background-repeat: no-repeat;
+    }
+
   img {
     max-width: 100%;
   }

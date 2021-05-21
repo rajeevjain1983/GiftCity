@@ -2,8 +2,6 @@
 import HOME_CONSTANTS from '../Home.constants';
 
 export const getNavigation = () => {
-
-  console.log("getNavigation");
   return {
     type: HOME_CONSTANTS.GET_NAVIGATION,
   };

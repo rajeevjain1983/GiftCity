@@ -6,10 +6,13 @@ export default css`
   display: flex;
   padding: 12px 0 0 0;
 }
-.navigation-container{
+
+
+@media ${props => props.theme.mediaQuery.large} {
+  .navigation-container{
   background:${props=>props.theme.bodyBackgroundColor};
 }
-
+}
 .brand-logo-container{
   display:flex;
   flex-direction:row;

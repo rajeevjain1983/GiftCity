@@ -7,8 +7,6 @@ import NAVIGATION_CONSTANTS, {
 
 
 export const getNavigation = () => {
-
-  console.log("getNavigation");
   return {
     type: NAVIGATION_CONSTANTS.GET_NAVIGATION,
   };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Link from "next/link";
 import withStyle from "../../../../common/hoc/withStyle";
 import styles from "../style/header.style";
@@ -7,6 +7,16 @@ import Navigation from "../../Navigation";
 import { Row, Col } from "../../../../common/atoms";
 
 const Header = (props) => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const drawerToggleClickHandler = () => {
+    setDrawerOpen(!drawerOpen);
+  };
+
+  const backdropClickHandler = () => {
+    setDrawerOpen(false);
+  };
+
   return (
     <>
       <div className={props.className}>
@@ -18,7 +28,8 @@ const Header = (props) => {
           <Col colSize={{ small: 6, medium: 8, large: 3 }}>
             <div className="brand-logo-container">
               <img
-                className="hide-on-desktop"
+                onClick={drawerToggleClickHandler}
+                className="hide-on-desktop elem-pt-XS"
                 alt="menu"
                 width="25px"
                 height="20px"
@@ -41,7 +52,10 @@ const Header = (props) => {
             colSize={{ small: 6, medium: 8, large: 12 }}
             className="navigation-container"
           >
-            <Navigation />
+            <Navigation
+              drawerOpen={drawerOpen}
+              backdropClickHandler={backdropClickHandler}
+            />
           </Col>
         </Row>
       </div>

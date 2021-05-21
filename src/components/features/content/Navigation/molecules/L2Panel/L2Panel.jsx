@@ -10,7 +10,6 @@ const L2Panel = (props) => {
     <React.Fragment>
       <div className={`${className} nav-bar-l2-panel`}>
         <div className="space-between" />
-        {/* <div className="horizontal-divider" /> */}
         <div className="main-container">
           <Row className="content-wrapper">
             <Row className="list">
@@ -22,7 +21,7 @@ const L2Panel = (props) => {
                       <div className={`l2-nav-category`}>
                         {displayName && (
                           <div className="L2-panel-container">
-                            <Link href={`c/${name}`}>
+                            <Link href="">
                               <BodyCopy
                                 className="l2-nav-link"
                                 fontFamily="secondary"
@@ -41,6 +40,7 @@ const L2Panel = (props) => {
                 })}
             </Row>
           </Row>
+          <div className="horizontal-divider elem-pt-MED hide-on-desktop" />
         </div>
       </div>
     </React.Fragment>

@@ -30,6 +30,18 @@ class L1NavItem extends React.PureComponent {
     }
   };
 
+  onClickHandler = (e) => {
+    if (!getViewportInfo().isDesktop) {
+      clearTimeout(this.timeOutHandler);
+      this.timeOutHandler = setTimeout(() => {
+        const { hovered } = this.state;
+        this.setState({ hovered: !hovered });
+      }, DELAY_TO_OPEN);
+    }
+    e.preventDefault();
+    e.stopPropagation();
+  };
+
   /**
    * This function toggle hovered state of drawer and bind/unbind keydown
    * @param {Boolean} isHovered
@@ -67,7 +79,7 @@ class L1NavItem extends React.PureComponent {
       <div className="nav-bar-l1-content">
         <span className="nav-bar-item-label">{displayName}</span>
 
-        <span className="icon-arrow" />
+        <span className="icon-arrow hide-on-desktop" />
       </div>
     );
   };
@@ -100,12 +112,13 @@ class L1NavItem extends React.PureComponent {
           data-locator={dataLocator}
           onMouseEnter={this.onHover}
           onMouseLeave={this.onMouseLeave}
+          onClick={this.onClickHandler}
           id={dataLocator}
           role="menuitem"
           {...others}
         >
           <Link
-            href={`c/${name}`}
+            href=""
             onKeyDown={this.onKeyPressed}
             aria-expanded={!!classForHovered}
           >

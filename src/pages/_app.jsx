@@ -16,10 +16,6 @@ class GiftCityApp extends App {
     this.toggleTheme = this.toggleTheme.bind(this);
   }
 
-  componentDidMount() {
-    console.log("App componentDidMount");
-  }
-
   toggleTheme() {
     if (this.state.theme.name === "TTheme") {
       this.setState({ theme: TTheme });
@@ -31,7 +27,6 @@ class GiftCityApp extends App {
   }
 
   render() {
-    console.log("Gift City!!", this.props);
     const { Component, pageProps, store } = this.props;
     return (
       <ThemeProvider theme={this.state.theme}>
