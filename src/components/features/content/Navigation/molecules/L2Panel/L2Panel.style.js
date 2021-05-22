@@ -17,7 +17,7 @@ display: none;
   border-bottom: 1px solid ${props => props.theme.colors.gray[500]};
 }
 
-@media ${props => props.theme.mediaQuery.smallOnly},${props => props.theme.mediaQuery.mediumOnly} {
+@media ${props => props.theme.mediaQuery.smallMax},${props => props.theme.mediaQuery.mediumOnly} {
 padding-top:${(props) => props.theme.spacing.ELEM_SPACING.MED} ;
 }
 @media ${props => props.theme.mediaQuery.large} {

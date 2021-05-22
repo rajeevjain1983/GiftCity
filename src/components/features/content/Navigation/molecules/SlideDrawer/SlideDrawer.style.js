@@ -3,7 +3,7 @@ import { css } from 'styled-components';
 
 export default css`
 
-@media ${props => props.theme.mediaQuery.smallOnly},${props => props.theme.mediaQuery.mediumOnly} {
+@media ${props => props.theme.mediaQuery.smallMax},${props => props.theme.mediaQuery.mediumOnly} {
       .side-drawer { 
          height: 100%;
          background: white;
