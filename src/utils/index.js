@@ -1,5 +1,9 @@
 
-
+import {
+  disableBodyScroll as disableBodyScrollLib,
+  enableBodyScroll as enableBodyScrollLib,
+  // clearAllBodyScrollLocks,
+} from 'body-scroll-lock';
 import { breakpoints} from '../../styles/themes/mediaQuery';
 
 export const getViewportInfo = () => {
@@ -23,25 +27,7 @@ export const getViewportInfo = () => {
     return window.viewportInfo;
   };
 
-  /**
- * Show Dark Overlay in background
- */
-export const showOverlay = () => {
-    const className = 'dark-overlay';
-    if (typeof window !== 'undefined' && document.getElementsByClassName(className)[0]) {
-      document.getElementsByClassName(className)[0].style.display = 'block';
-    }
-  };
-  
-  /**
-   * Remove Dark Overlay from background
-   */
-  export const closeOverlay = () => {
-    const className = 'dark-overlay';
-    if (typeof window !== 'undefined' && document.getElementsByClassName(className)[0]) {
-      document.getElementsByClassName(className)[0].style.display = 'none';
-    }
-  };
+
  
 
   export const isMobileApp = () => {
@@ -84,24 +70,30 @@ export const isiOSWeb = () => {
     return (isClient() && isiOSWeb()) || (isClient() && isAndroidWeb());
   };
   
-
-  
- 
-  
-
-  
-
-  export const createUrlSearchParams = (query = {}) => {
-    const queryParams = [];
-    const keys = Object.keys(query);
-    for (let i = 0, l = keys.length; i < l; i += 1) {
-      queryParams.push(`${keys[i]}=${query[keys[i]]}`);
+  /**
+ * Enable Body Scroll, Moving it to common utils and putting a check of Mobile app at one place instead of containers.
+ */
+export const enableBodyScroll = targetElem => {
+  if (isClient()) {
+    if (isiOSWeb() && targetElem) {
+      enableBodyScrollLib(targetElem);
+      return;
     }
-    return queryParams.join('&');
-  };
-  
-  export function getHostName() {
-    return window.location.hostname;
+    const [body] = document.getElementsByTagName('body');
+    body.classList.remove('disableBodyScroll');
   }
-  
-  
+};
+
+/**
+ * Disable Body Scroll
+ */
+export const disableBodyScroll = targetElem => {
+  if (isClient()) {
+    if (isiOSWeb() && targetElem) {
+      disableBodyScrollLib(targetElem);
+      return;
+    }
+    const [body] = document.getElementsByTagName('body');
+    body.classList.add('disableBodyScroll');
+  }
+};

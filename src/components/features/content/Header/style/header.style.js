@@ -4,7 +4,13 @@ export default css`
  
 .container{
   display: flex;
-  padding: 12px 0 0 0;
+  padding: ${props=>props.theme.spacing.ELEM_SPACING.SM} 0 0 0;
+}
+.menu-button{
+  margin-top:${props=>props.theme.spacing.ELEM_SPACING.XXS};
+  padding:${props=>props.theme.spacing.ELEM_SPACING.XXS};
+  display:flex;
+  align-items:center;
 }
 
 
@@ -17,11 +23,11 @@ export default css`
   display:flex;
   flex-direction:row;
   align-items: center;
-  padding-left:12px;
+  padding-left:${props=>props.theme.spacing.ELEM_SPACING.SM};
 }
   
   .brand-logo {
-    padding-left:8px;
+    padding-left:${props=>props.theme.spacing.ELEM_SPACING.XS};
     width: 130px;
     height: 40px;
   }
@@ -30,7 +36,7 @@ export default css`
   }
   .cart{
     width: 60px;
-    padding-right:8px;
+    padding-right:${props=>props.theme.spacing.ELEM_SPACING.XS};
   }
   
 

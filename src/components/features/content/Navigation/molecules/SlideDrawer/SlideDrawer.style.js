@@ -18,6 +18,7 @@ export default css`
       }
       .side-drawer.open {
          transform: translateX(0);
-      }
+         overflow-y:scroll;
+      }  
 }
 `;

@@ -1,7 +1,8 @@
 
 import { css } from 'styled-components';
 export default css`
-  /* @media ${props => props.theme.mediaQuery.large} { */
+
+
     .nav-bar-item-label {
       width: 100%;
       display: inline-block;
@@ -22,12 +23,7 @@ export default css`
     height: 10px;
     display: inline-block;
     }
-
-    
-
     .nav-bar-l1-content{
       display:flex;
     }
-
-  /* } */
 `;

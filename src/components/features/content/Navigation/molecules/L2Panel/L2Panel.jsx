@@ -15,7 +15,7 @@ const L2Panel = (props) => {
             <Row className="list">
               {panelData &&
                 panelData.map((category, categoryIndex) => {
-                  const { displayName, name } = category || {};
+                  const { displayName } = category || {};
                   return (
                     <React.Fragment>
                       <div className={`l2-nav-category`}>

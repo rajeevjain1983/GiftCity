@@ -27,14 +27,15 @@ const Header = (props) => {
         >
           <Col colSize={{ small: 6, medium: 8, large: 3 }}>
             <div className="brand-logo-container">
-              <img
-                onClick={drawerToggleClickHandler}
-                className="hide-on-desktop elem-pt-XS"
-                alt="menu"
-                width="25px"
-                height="20px"
-                src="/icons/menu.png"
-              />
+              <div className="menu-button hide-on-desktop">
+                <img
+                  onClick={drawerToggleClickHandler}
+                  alt="menu"
+                  width="30px"
+                  height="25px"
+                  src="/icons/menu.png"
+                />
+              </div>
               <Link href="/">
                 <img className="brand-logo" alt="Logo" src="giftCityName.png" />
               </Link>
