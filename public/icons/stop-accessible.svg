@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <filter id="stop" width="24.8" height="24.8" x="8" y="8" filterUnits="userSpaceOnUse">
+            <feOffset dx=".8" dy=".8"/>
+            <feGaussianBlur result="blur"/>
+            <feFlood flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:none}
+        </style>
+    </defs>
+    <g id="stop-accessible" transform="translate(-23 -449)">
+        <path id="_40x40" d="M0 0H40V40H0z" class="cls-1" transform="translate(23 449)"/>
+        <g filter="url(#stop)" transform="translate(23 449)">
+            <g id="stop-2" fill="rgba(255,255,255,0.8)" stroke="#595959" stroke-width="0.5px" transform="translate(8 8)">
+                <rect width="24" height="24" stroke="none" rx="4"/>
+                <rect width="23.5" height="23.5" x=".25" y=".25" class="cls-1" rx="3.75"/>
+            </g>
+        </g>
+    </g>
+</svg>
