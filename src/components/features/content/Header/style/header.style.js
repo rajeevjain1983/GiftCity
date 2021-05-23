@@ -12,7 +12,10 @@ export default css`
   display:flex;
   align-items:center;
 }
-
+.shadow-line{
+  height:8px;
+  background-color:${props=>props.theme.colors.common.tColor};
+}
 
 @media ${props => props.theme.mediaQuery.large} {
   .navigation-container{

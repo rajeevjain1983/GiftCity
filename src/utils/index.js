@@ -97,3 +97,7 @@ export const disableBodyScroll = targetElem => {
     body.classList.add('disableBodyScroll');
   }
 };
+
+export const getIconPath = iconName => {
+  return `/icons/${iconName}`;
+}

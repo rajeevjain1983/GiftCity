@@ -18,7 +18,10 @@ export default css`
       }
       .side-drawer.open {
          transform: translateX(0);
-         overflow-y:scroll;
       }  
+      .nav-list{
+         overflow-y:scroll;
+         height:100%;
+      }
 }
 `;

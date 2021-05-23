@@ -6,7 +6,6 @@ import style from "../styles/navigation.style";
 import L2Panel from "../molecules/L2Panel";
 import SlideDrawer from "../molecules/SlideDrawer/SlideDrawer";
 import BackDrop from "../molecules/SlideDrawer/BackDrop";
-import { BodyCopy } from "../../../../common/atoms";
 
 const Navigation = (props) => {
   const { navigationData, className, drawerOpen, backdropClickHandler } = props;
@@ -19,17 +18,6 @@ const Navigation = (props) => {
     <React.Fragment>
       <div className={className}>
         <SlideDrawer show={drawerOpen}>
-          <div className="customer-name-container hide-on-desktop">
-            <div className="avatar-icon nav-sprite-2"></div>
-            <BodyCopy
-              component="span"
-              className="elem-pt-XXXS"
-              fontWeight="extrabold"
-            >
-              Hello, Rajeev
-            </BodyCopy>
-          </div>
-          <div className="horizontal-divider elem-pt-XS hide-on-desktop" />
           <ul className="main-navigation" role="menubar">
             {navigationData &&
               navigationData.map((mainCategory, index) => {

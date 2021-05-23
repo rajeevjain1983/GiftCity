@@ -4,16 +4,15 @@ import {mediaQuery} from "../../styles/themes/mediaQuery";
 export default css`
   body {
     font-family: "sans-serif";
-    overflow: auto;
+    overflow: hidden;
     /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     font-size:13pt;
     background-color:${(props) => props.theme.colors.common.white};
     color:${(props) => props.theme.fontColor};
-   
   }
 
 /* 
@@ -24,7 +23,7 @@ export default css`
   }
 
   .full-background {
-    background: ${(props) => props.theme.colorPalette.gray[300]};
+    background: ${(props) => props.theme.colors.gray[300]};
   }
 
   .no-scroll {

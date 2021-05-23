@@ -71,7 +71,7 @@ const textboxStyles = css`
     display: none;
   }
   &.textbox_validation_success .TextBox__input {
-    border-bottom: 1px solid ${props => props.theme.colorPalette.success};
+    border-bottom: 1px solid ${props => props.theme.colors.success};
   }
 
   &.textbox_validation_success .success__checkmark {

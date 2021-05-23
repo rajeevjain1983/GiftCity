@@ -9,7 +9,7 @@ import {
   yellow,
 } from "../colors";
 import spacing from "../spacing";
-import { mediaQuery } from "../mediaQuery";
+import { mediaQuery,breakpoints } from "../mediaQuery";
 import gridDimensions from '../gridDimensions';
 
 export default {
@@ -20,4 +20,5 @@ export default {
   bodyBackgroundColor: common.tColor,
   fontColor:gray[1900],
   gridDimensions,
+  breakpoints
 };

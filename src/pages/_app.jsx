@@ -35,7 +35,7 @@ class GiftCityApp extends App {
           <title>Gift City</title>
           <Header toggleTheme={this.toggleTheme} />
           <Component {...pageProps} />
-          <Footer />
+          {/* <Footer /> */}
         </Provider>
       </ThemeProvider>
     );

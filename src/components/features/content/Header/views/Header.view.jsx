@@ -57,6 +57,7 @@ const Header = (props) => {
               drawerOpen={drawerOpen}
               backdropClickHandler={backdropClickHandler}
             />
+            <div className="shadow-line hide-on-desktop" />
           </Col>
         </Row>
       </div>

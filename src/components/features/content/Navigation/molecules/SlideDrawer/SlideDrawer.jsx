@@ -6,6 +6,7 @@ import {
   enableBodyScroll,
   isMobileWeb,
 } from "../../../../../../utils";
+import { BodyCopy } from "../../../../../common/atoms";
 class SlideDrawer extends React.PureComponent {
   handleBodyScroll = (drawer) => {
     const { show } = this.props;
@@ -38,7 +39,18 @@ class SlideDrawer extends React.PureComponent {
           ref={this.setDrawerRef}
           className={drawerClasses}
         >
-          {children}
+          <div className="customer-name-container hide-on-desktop">
+            <div className="avatar-icon nav-sprite-2"></div>
+            <BodyCopy
+              component="span"
+              className="elem-pt-XXXS"
+              fontWeight="extrabold"
+            >
+              Hello, Rajeev
+            </BodyCopy>
+          </div>
+          <div className="horizontal-divider elem-pt-XS hide-on-desktop" />
+          <div className="nav-list">{children}</div>
         </div>
       </div>
     );

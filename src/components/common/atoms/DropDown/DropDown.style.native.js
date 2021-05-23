@@ -21,8 +21,8 @@ const DropDownStyle = css`
       : getSecondaryVariation(props)};
   background-color: ${props =>
     props.variation === 'primary' || props.bgColor
-      ? props.theme.colorPalette.gray[500]
-      : props.theme.colorPalette.white};
+      ? props.theme.colors.gray[500]
+      : props.theme.colors.white};
   width: 100%;
 `;
 
@@ -82,7 +82,7 @@ const SelectedLabelView = styled.View`
 const SHADOW = `
   shadow-opacity: 0.15;
   shadow-radius: 2px;
-  shadow-color: ${props => props.theme.colorPalette.black};
+  shadow-color: ${props => props.theme.colors.black};
   shadow-offset: 0px 4px;
   elevation: 2;
 `;
